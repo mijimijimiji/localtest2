@@ -21,7 +21,9 @@ public class TestController {
 	public String selectAll(Model m) {
 		List<Dept> dtos= service.selectAll();
 		m.addAttribute("dtos", dtos);	
+		System.out.println("같은 부분 수정");
 		return  "index";
+	
 	}
 	
 	
