@@ -21,6 +21,7 @@ public class TestController {
 	public String selectAll(Model m) {
 		List<Dept> dtos= service.selectAll();
 		m.addAttribute("dtos", dtos);	
+		System.out.println("hotfix수정 같은 라인");
 		return  "index";
 	}
 	
